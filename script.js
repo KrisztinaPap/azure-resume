@@ -4,7 +4,7 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 // Count site visits
 
-function visitorCounter() {
+/* function visitorCounter() {
     var counterSpan = document.getElementById("counterSpan");
     var currentCounterValue = Number(counterSpan.textContent);
     var updatedCountValue = currentCounterValue;
@@ -12,4 +12,4 @@ function visitorCounter() {
     counterSpan.innerHTML = Number(updatedCountValue);
 }
 
-window.onload = visitorCounter;
+window.onload = visitorCounter; */

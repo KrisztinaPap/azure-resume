@@ -45,6 +45,10 @@ div {
     padding-top: 1rem;
 }
 
+img {
+    width: 6vw;
+}
+
 #copyright {
     font-size: 0.8rem;
     font-style: italic;

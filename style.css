@@ -11,20 +11,12 @@ footer {
 
 footer {
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .container {
     margin: auto;
     padding: 16px;
-}
-
-.parallax {
-    background-image: url("/img/rainbow-1149610_1920.jpg");
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 h1, 
@@ -55,7 +47,13 @@ div {
 }
 
 img {
-    width: 6vw;
+    width: 25vw;
+}
+
+.fab {
+    color: black;
+    font-size: 2.4rem;
+    padding: 0 0.4rem;
 }
 
 #copyright {
@@ -72,6 +70,9 @@ img {
         max-width: 95vw;
     }
     
+    img {
+        width: 25vw;
+    }
 }
 
 /*** Larger than tablet ***/
@@ -79,11 +80,35 @@ img {
     .container {
         max-width: 90vw;
     }
+
+    img {
+        width: 12vw;
+    }
 }
 
 /*** Larger than desktop ***/
 @media (min-width: 1000px) {
     .container {
         max-width: 900px;
+    }
+
+    .parallax {
+        height: 50vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bg-1 {
+        background-image: url("/img/rainbow-1149610_1920.jpg");
+    }
+
+    .bg-2 {
+        background-image: url("/img/sunset-850873_1920.jpg");
+    }
+
+    img {
+        width: 8vw;
     }
 }

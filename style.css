@@ -56,6 +56,16 @@ img {
     padding: 0 0.4rem;
 }
 
+.fab:focus,
+.fab:hover {
+    color:darkorange;
+}
+
+a:focus,
+a:hover {
+    color:darkorange;
+}
+
 #copyright {
     font-size: 0.8rem;
     font-style: italic;

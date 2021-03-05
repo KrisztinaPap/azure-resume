@@ -114,6 +114,11 @@ a:hover {
     top: 0;
 }
 
+.menu-category,
+.menu-category i {
+    color: whitesmoke;
+}
+
 .overlay-content a .fa {
     color: #818181;
 }

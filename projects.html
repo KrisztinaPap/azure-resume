@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Krisztina Pap || Projects</title>
+</head>
+<body>
+    <header>
+        <!-- Hamburger menu -->
+        <div class="hamburger-menu">
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- The menu overlay -->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="/index.html"><i class="fa fa-user"></i> About Me</a>
+                <a href="/projects.html"><i class="fa fa-briefcase"></i> Projects</a>
+            </div>
+
+        </div>
+        <div class="header-info">
+            <h1>Krisztina Pap || Projects</h1>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/krisztinapap/"><i class="fa fa-linkedin-square"></i></a> <a href="https://github.com/KrisztinaPap"><i class="fa fa-github-square"></i></a>
+            </div>    
+          
+            <img src="img/kp-logo-transparent.png" alt="heart with arrow brackets">
+        </div>
+    </header>
+     <div class="project-orange">
+        <div class="container center-content">
+            <h2 class="project-title">Battletracker</h2>
+            <a href="https://pdkbattletracker.azurewebsites.net"><img class="project-thumbnail" src="/img/battletracker.png" alt="Screenshot from Battletracker web app"></a>
+      
+                <h3>Project Overview</h3>
+                <ul class="project-ul">
+                    <li>Score tracking web app for miniature wargaming/tournaments</li>
+                    <li>Tech: ASP.NET Core, Model-View-Controller (MVC), Entity Framework (EF), Bootstrap</li>
+                    <li>Hosted on Microsoft Azure as an App Service with an SQL Database</li>
+                    <li>Plans for the project: Authentication/Authorization, Testing suite</li>
+                    <li>For more details, visit the project's <a href="https://github.com/KrisztinaPap/PDKBattleTracker">GitHub repo</a></li>
+                </ul>
+            <p class="demo-p"><a class="demo-button" href="https://pdkbattletracker.azurewebsites.net">Live demo</a></p>
+     </div>
+     <div class="project-white">
+        <div class="container center-content">
+            <h2 class="project-title">PocketsDK Website</h2>
+            <a href="https://www.pocketsdk.org/"><img class="project-thumbnail" src="/img/pocketsdk.png" alt="Screenshot from the PDK website"></a>
+      
+                <h3>Project Overview</h3>
+                <ul class="project-ul">
+                    <li>Home of PocketsDK, a YouTube content creator</li>
+                    <li>Tech: HTML5, CSS3, JavaScript</li>
+                    <li>Deployed on Netlify</li>
+                    <li>Plans for the project: None currently</li>
+                    <li>For more details, visit the project's <a href="https://github.com/KrisztinaPap/PDK-Home">GitHub repo</a></li>
+                </ul>
+            <p class="demo-p"><a class="demo-button" href="https://www.pocketsdk.org/">Live demo</a></p>
+     </div>
+     <div class="project-orange">
+        <div class="container center-content">
+            <h2 class="project-title">My To-do List</h2>
+            <a href="https://krisztinapap.github.io/js-to-do-list-improved/"><img class="project-thumbnail" src="/img/to-do-list.png" alt="Screenshot from my JavaScript to-do list web app"></a>
+      
+                <h3>Project Overview</h3>
+                <ul class="project-ul">
+                    <li>To-do list web app</li>
+                    <li>Tech: HTML5, CSS3, JavaScript</li>
+                    <li>Hosted on GitHub pages (front-end only, no database)</li>
+                    <li>Plans for the project: Might add a database</li>
+                    <li>For more details, visit the project's <a href="https://github.com/KrisztinaPap/js-to-do-list-improved">GitHub repo</a></li>
+                </ul>
+            <p class="demo-p"><a class="demo-button" href="https://krisztinapap.github.io/js-to-do-list-improved/">Live demo</a></p>
+     </div>
+   </div>    
+    <footer>
+        <div id="copyright">
+            <p>&copy; <span id="currentYear"></span> by Krisztina Pap</p>
+            <p>Rainbow image by <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1149610">Free-Photos</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1149610">Pixabay</a></p>
+            <p>Sunset image by <a href="https://pixabay.com/users/sorbyphoto-725076/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=850873">Henning Sørby</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=850873">Pixabay</a></p>
+        </div>
+    </footer>
+   
+    <script src="script.js" defer></script>
+</body>
+</html>

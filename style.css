@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 header,
@@ -27,38 +28,55 @@ h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 6vw;
     padding-top: 2rem;
 }
 
 h2 {
+    font-size: 3vw;
     padding-top: 0.4rem;
     padding-bottom: 1rem;
 }
 
 h3,
 h4 {
+    font-size: 2vw;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
+.social-links a .fa {
+    font-size: 6vw;
+}
+
+.social-links a .fa:focus,
+.social-links a .fa:hover {
+    color:darkorange;
+}
+
 div {
-    padding-top: 1rem;
+    padding-top: 0;
 }
 
 img {
     width: 25vw;
 }
 
-.fab {
+.fab,
+.fa {
     color: black;
     font-size: 2.4rem;
     padding: 0 0.4rem;
+    margin: 1rem;
 }
 
 .fab:focus,
 .fab:hover {
     color:darkorange;
+}
+
+.header-info {
+    padding-top: 2rem;
 }
 
 a:focus,
@@ -72,6 +90,140 @@ a:hover {
     padding-top: 0.6rem;
 }
 
+/**************** Navigation Menu Overlay styling *************************/
+/*** Inspiration: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp *****/
+
+/* The Menu Overlay (background) */
+.overlay { 
+    height: 0vh;
+    width: 100vw;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+.hamburger-menu {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 0;
+    top: 0;
+}
+
+.overlay-content a .fa {
+    color: #818181;
+}
+
+.overlay-content a .fa:focus,
+.overlay-content a .fa:hover {
+    color: #f1f1f1;
+}
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+
+  /**************** Projects Page ****************/
+
+.project-orange {
+    background-color: darkorange;
+    padding: 2rem 0;
+}
+
+.project-white {
+    background-color: whitesmoke;
+    padding: 2rem 0;
+}
+
+.project-title {
+    text-transform:uppercase;
+}
+
+.project-thumbnail {
+    width: 80vw;
+    border: 1px #202020 solid;
+    margin: auto;
+    border-radius: 6px;
+}
+
+.project-thumbnail:hover,
+.project-thumbnail:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.demo-p {
+    margin: 2rem;
+}
+  
+.demo-button {
+    margin: 2rem;
+    max-width: 12vw;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: 1px #202020 solid;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: #202020;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.demo-button:hover,
+.demo-button:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    border: 1px white solid;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-ul {
+    text-align: left;
+    margin: 0 auto;
+}
+
 /************* Mobile first media queries *****************/
 
 /*** Larger than mobile ***/
@@ -83,12 +235,28 @@ a:hover {
     img {
         width: 25vw;
     }
+
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
 }
 
 /*** Larger than tablet ***/
 @media (min-width: 750px) {
     .container {
         max-width: 90vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .project-thumbnail,
+    .project-ul {
+        width: 70vw;
     }
 
     img {
@@ -98,6 +266,14 @@ a:hover {
 
 /*** Larger than desktop ***/
 @media (min-width: 1000px) {
+    * {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
     .container {
         max-width: 900px;
     }
@@ -116,6 +292,11 @@ a:hover {
 
     .bg-2 {
         background-image: url("/img/sunset-850873_1920.jpg");
+    }
+
+    .project-thumbnail,
+    .project-ul {
+        width: 60vw;
     }
 
     img {

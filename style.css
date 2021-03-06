@@ -20,6 +20,15 @@ footer {
     padding: 16px;
 }
 
+.section-orange {
+    background-color: darkorange;
+    padding: 2rem 0;
+}
+
+.font-orange {
+    color: darkorange;
+}
+
 h1, 
 h2,
 h3, 
@@ -38,7 +47,12 @@ h2 {
     padding-bottom: 1rem;
 }
 
-h3,
+h3 {
+    font-size: 2.4vw;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
 h4 {
     font-size: 2vw;
     padding-top: 1rem;
@@ -46,7 +60,7 @@ h4 {
 }
 
 .social-links a .fa {
-    font-size: 6vw;
+    font-size: 14vw;
 }
 
 .social-links a .fa:focus,
@@ -234,6 +248,11 @@ font-size: 3rem;
     .project-thumbnail {
         max-width: 95vw;
     }
+
+    
+    .social-links a .fa {
+        font-size: 12vw;
+    }
     
     img {
         width: 25vw;
@@ -252,6 +271,10 @@ font-size: 3rem;
     .container,
     .project-thumbnail {
         max-width: 90vw;
+    }
+    
+    .social-links a .fa {
+        font-size: 8vw;
     }
 
     h1 {
@@ -274,8 +297,16 @@ font-size: 3rem;
         font-size: 18px;
     }
 
+    .social-links a .fa {
+        font-size: 6vw;
+    }
+
     h1 {
         font-size: 4vw;
+    }
+
+    .section-orange {
+        background-color: whitesmoke;
     }
 
     .container,

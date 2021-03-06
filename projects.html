@@ -20,7 +20,12 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
-        <!-- The menu overlay -->
+
+
+        <!-- 
+            The menu overlay 
+            Code borrowed from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp 
+        -->
         <div id="myNav" class="overlay">
 
             <!-- Button to close the overlay navigation -->
@@ -30,10 +35,10 @@
             <div class="overlay-content">
                 <h3 class="menu-category"><i class="fa fa-user"></i>About Me</h3>
                 <a href="/index.html">My Azure Resume</a>
-                <h3 class="menu-category"><i class="fa fa-briefcase"></i>What I Do</h3>
-                <a href="#project-battletracker">Project Battletracker</a>
-                <a href="#project-pocketsdk">Project PocketsDK</a>
-                <a href="#project-to-do-list">Project To-Do List</a>
+                <h3 class="menu-category"><i class="fa fa-briefcase"></i>My Projects</h3>
+                <a href="#project-battletracker">Battletracker</a>
+                <a href="#project-pocketsdk">PocketsDK Home</a>
+                <a href="#project-to-do-list">To-Do List</a>
             </div>
 
         </div>
@@ -91,7 +96,24 @@
                 </ul>
             <p class="demo-p"><a class="demo-button" href="https://krisztinapap.github.io/js-to-do-list-improved/" target="_blank">Live demo</a></p>
      </div>
-   </div>    
+   </div>   
+   <div class="project-white" id="project-grocery">
+    <div class="container center-content">
+        <h2 class="project-title">Grocery App</h2>
+        <a href="https://github.com/KrisztinaPap/grocery-project" target="_blank"><img class="project-thumbnail" src="/img/grocery-app.png" alt="Screenshot from the Grocery App website"></a>
+  
+            <h3>Project Overview</h3>
+            <ul class="project-ul">
+                <li>Grocery app pulls recipes from an API</li>
+                <li>It allows the user to log in</li>
+                <li>The user can filter and save recipes, build a shopping list, and print it to a PDF checklist</li>
+                <li>Tech: React, Redux, React-Router, HTML5, CSS3, ES6 JavaScript</li>
+                <li>Group project (3 team members): I led the team and contributed React, Redux, and ES6 code</li>
+                <li>Not currently deployed</li>
+                <li>Plans for the project: None currently</li>
+                <li>For more details, visit the project's <a href="https://github.com/KrisztinaPap/grocery-project" target="_blank">GitHub repo</a></li>
+            </ul>
+ </div> 
     <footer>
         <div id="copyright">
             <p>&copy; <span id="currentYear"></span> by Krisztina Pap</p>

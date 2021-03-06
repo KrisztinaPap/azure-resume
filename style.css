@@ -18,6 +18,18 @@ footer {
 .container {
     margin: auto;
     padding: 16px;
+    padding-bottom: 26px;
+}
+
+.section-orange {
+    background-color: darkorange;
+    margin: 0;
+    padding: 0;
+
+}
+
+.font-orange {
+    color: darkorange;
 }
 
 h1, 
@@ -25,28 +37,29 @@ h2,
 h3, 
 h4 {
     font-family: 'Lato', sans-serif;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 h1 {
     font-size: 6vw;
-    padding-top: 2rem;
+    padding-top: 4vh;
 }
 
 h2 {
-    font-size: 3vw;
-    padding-top: 0.4rem;
-    padding-bottom: 1rem;
+    font-size: 5vw;
 }
 
-h3,
+h3 {
+    font-size: 4vw;
+}
+
 h4 {
-    font-size: 2vw;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    font-size: 3.6vw;
 }
 
 .social-links a .fa {
-    font-size: 6vw;
+    font-size: 14vw;
 }
 
 .social-links a .fa:focus,
@@ -91,32 +104,34 @@ a:hover {
 }
 
 /**************** Navigation Menu Overlay styling *************************/
-/*** Inspiration: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp *****/
+/*** Code borrowed from: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp *****/
 
-/* The Menu Overlay (background) */
 .overlay { 
     height: 0vh;
     width: 100vw;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden; 
+    transition: 0.5s; 
   }
 
 .hamburger-menu {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed; 
+    z-index: 1; 
     right: 0;
     top: 0;
 }
 
 .menu-category,
 .menu-category i {
-    color: whitesmoke;
+    color: #a3a2a2;
+    font-size: 8vw;
+    margin: 1.6vh 1vw;
+    text-transform: uppercase;
 }
 
 .overlay-content a .fa {
@@ -125,40 +140,36 @@ a:hover {
 
 .overlay-content a .fa:focus,
 .overlay-content a .fa:hover {
-    color: #f1f1f1;
+    color: darkorange;
 }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+
+.overlay-content {
+position: relative;
+top: 20%; 
+width: 100vw;
+text-align: center;
+margin-top: 2rem; 
+}
+
+.overlay a {
+padding: 10px;
+text-decoration: none;
+font-size: 5vw;
+color: whitesmoke;
+display: block; 
+transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+color: darkorange;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 20px;
+font-size: 3rem;
+}
 
 
 
@@ -237,16 +248,47 @@ a:hover {
     .project-thumbnail {
         max-width: 95vw;
     }
+
+    .social-links a .fa {
+        font-size: 12vw;
+    }
     
     img {
         width: 25vw;
     }
 
-    .overlay a {font-size: 20px}
+    h1 {
+        font-size: 6vw;
+        padding-top: 4vh;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    h4 {
+        font-size: 3.6vw;
+    }
+
+    /*** Menu styles ***/
+
     .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+        font-size: 6vw;
+        top: 15px;
+        right: 35px;
+    }
+
+    .menu-category,
+    .menu-category i {
+        font-size: 6vw;
+        margin: 1.2vh 0.8vw;
+    }
+    .overlay a {
+        font-size: 3.6vw;
     }
 }
 
@@ -256,9 +298,25 @@ a:hover {
     .project-thumbnail {
         max-width: 90vw;
     }
+    
+    .social-links a .fa {
+        font-size: 8vw;
+    }
 
     h1 {
-        font-size: 5vw;
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 2.8vw;
+    }
+
+    h3 {
+        font-size: 2.4vw;
+    }
+
+    h4 {
+        font-size: 2.2vw;
     }
 
     .project-thumbnail,
@@ -269,6 +327,21 @@ a:hover {
     img {
         width: 12vw;
     }
+
+    /*** Menu styles ***/
+
+    .overlay .closebtn {
+        font-size: 4vw;
+    }
+
+    .menu-category,
+    .menu-category i {
+        font-size: 3vw;
+        margin: 1.4vh 0.6vw;
+    }
+    .overlay a {
+        font-size: 2.4vw;
+    }
 }
 
 /*** Larger than desktop ***/
@@ -277,8 +350,28 @@ a:hover {
         font-size: 18px;
     }
 
+    .social-links a .fa {
+        font-size: 6vw;
+    }
+
     h1 {
-        font-size: 4vw;
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 3.4vw;
+    }
+    
+    h3 {
+        font-size: 2.8vw;
+    }
+    
+    h4 {
+        font-size: 2.4vw;
+    }
+
+    .section-orange {
+        background-color: whitesmoke;
     }
 
     .container,
